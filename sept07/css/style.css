@@ -1,0 +1,68 @@
+body{
+
+}
+
+header {
+    background-color: rgba(6, 11, 1, 0.59);
+    color: white;
+    width: 100%;
+    position: fixed;
+}
+
+header ul {
+  margin: 0;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: purple;
+}
+
+main::after {
+content:"";
+clear: both;
+display: block;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+div:nth-of-type(1) {
+  background-color: rgb(249, 32, 7);
+}
+
+div:nth-of-type(2) {
+  background-color: rgb(247, 167, 12);
+}
+
+div:nth-of-type(3) {
+  background-color: yellow;
+}
+
+div:nth-of-type(4) {
+  background-color: green;
+}
+
+div:nth-of-type(5) {
+  background-color: blue;
+}
+
+footer {
+  background-color: rgba(5, 0, 9, 0.7);
+  padding: 25px;
+  margin: 0;
+  width: 100%;
+}
+
+footer p {
+position: absolute;
+
+}
