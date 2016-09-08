@@ -1,0 +1,67 @@
+body {
+  background-image: url(../img/background.jpg);
+}
+
+header nav h1 {
+  position: absolute;
+  left: 15%;
+}
+
+header {
+  position: fixed;
+  color: white;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/*div {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.kitten {
+  background-color: rgba(210, 217, 208, 0.93);
+  width: 400px;
+  height: 250px;
+  position: fixed;
+  top: calc(50% - calc(250px / 2));
+  left: calc(50% - calc(400px / 2));
+}
+
+.white {
+  background-color: white;
+  width: 35%;
+  border-bottom: solid black;
+}
+
+.brown {
+  background-color: white;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  width: 50%;
+}
+
+button {
+  position: fixed;
+  top: 63%;
+  left: 20%;
+  background-color: white;
+
+}
+
+img {
+  position: absolute;
+  top: calc(55% - calc(150px / 2));
+  left: calc(75% - calc(150px / 2));
+}*/
