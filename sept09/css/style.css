@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  height: 500px;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  color: gray;
+}
+
+nav {
+  padding: 40px 10px;
+}
+
+nav > div {
+
+}
+
+h1, ul {
+  margin: 0;
+  display: inline-block;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 span {
+  color: rgb(12, 190, 169);
+}
+
+img {
+  float: left;;
+  width: auto;
+  height: 55px
+}
+
+ul {
+  float: right;
+}
+
+ul li {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+ul li:hover,
+.hero {
+  color: rgb(12, 190, 169);
+  border-bottom: solid white;
+  cursor: pointer;
+}
+
+h2 {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: calc(50% - calc(300px / 2))
+}
