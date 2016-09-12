@@ -1,0 +1,83 @@
+body{
+  margin: 0;
+}
+
+h1, h2, h3, ul, ol {
+  margin: 0;
+}
+
+header {
+  background-color: rgb(174, 242, 111);
+  padding: 20px;
+}
+
+nav::after, article::after, section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav {
+  background-color: rgba(224, 61, 61, 0.8)
+}
+
+nav img {
+  width: 65px;
+  height: auto;
+}
+
+nav h1 {
+  float: left;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+article {
+  float: left;
+  width: 60%;
+  background-color: rgb(233, 227, 73)
+}
+
+article div:nth-of-type(1) {
+  width: 60%;
+  float: left;
+}
+
+article div:nth-of-type(2) {
+  width: 40%;
+  float: left;
+}
+
+article img {
+  width: 100%;
+}
+
+aside {
+  width: 40%;
+  float: left;
+  background-color: rgb(176, 91, 242)
+}
+
+section:nth-of-type(1) {
+  background-color: rgb(96, 147, 231)
+}
+
+section:nth-of-type(2) div {
+  width: calc(100% / 4);
+  display: inline-block;
+  float: left;
+}
+
+section:nth-of-type(2) {
+  background-color: rgb(246, 164, 55)
+}
+
+section:nth-of-type(2) img {
+  width: 100%;
+}
