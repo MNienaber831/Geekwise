@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  background-color: rgb(103, 201, 204);
+  height: 120px;
+}
+
+div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div {
+  background-color: rgb(42, 72, 232);
+  height: 20px;
+}
+
+main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main {
+  background-color: rgb(197, 233, 236);
+  height: 600px;
+}
+
+aside::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+aside {
+  width: 25%;
+  height: 600px;
+  background-color: rgb(71, 165, 241);
+  float: right;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  height: 50px;
+  background-color: rgb(1, 13, 97)
+}
