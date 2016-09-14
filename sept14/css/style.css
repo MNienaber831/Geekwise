@@ -1,0 +1,12 @@
+section {
+  padding: 0 10%;
+}
+
+.hero {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.hero div {
+  flex: 50%;
+}
