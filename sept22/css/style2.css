@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+ul {
+  margin-left: auto;
+}
+
+main {
+  align-items: center;
+}
