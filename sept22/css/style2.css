@@ -1,3 +1,8 @@
+body {
+  height: 600px;
+  margin: 0 20px;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -13,5 +18,15 @@ ul {
 }
 
 main {
-  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  text-align: center;
+  margin-top:80px;
+}
+
+textarea {
+
 }

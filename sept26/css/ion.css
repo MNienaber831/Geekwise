@@ -1,0 +1,18 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+body {
+margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul, ul li, nav h1 {
+  margin: 0;
+}
+
+main {
+  background-image: url(../img/banner.jpg);
+}
