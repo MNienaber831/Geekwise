@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 300px;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 10px;
+  padding: 0 5px;
+}
+
+header nav ul li:nth-of-type(1) {
+  border: 1px white solid;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header div.header {
+  
+}

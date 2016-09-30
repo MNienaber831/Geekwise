@@ -1,18 +1,228 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300';
 
 body {
-margin: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
 }
 
-ul, ul li, nav h1 {
+ul, ul li, nav h1, main h2 {
   margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav h1, .hover {
+  color: hsl(0, 0%, 23%)
+}
+
+nav ul li {
+  padding: 6px 10px;
+}
+
+.hover:hover {
+  cursor: pointer;
+  color: hsl(217, 85%, 69%);
+}
+
+nav ul li:nth-of-type(5) {
+  background-color: hsl(217, 85%, 69%);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+nav ul li:nth-of-type(5):hover {
+  background-color: hsl(217, 85%, 79%);
 }
 
 main {
   background-image: url(../img/banner.jpg);
+  padding: 120px 0;
+  color: white;
+  text-align: center;
+  background-position: center;
+}
+
+main h2 {
+  font-size: 40px;
+}
+
+main h3 {
+  font-size: 20px;
+}
+
+main input[type="submit"] {
+  font-size: 20px;
+  padding: 10px 25px;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+}
+
+main input[type="submit"]:nth-of-type(1) {
+  background-color: hsl(217, 62%, 66%);
+  margin-right: 15px;
+}
+
+main input[type="submit"]:nth-of-type(1):hover {
+  background-color: hsl(217, 62%, 69%);
+}
+
+main input[type="submit"]:nth-of-type(2) {
+  background-color: transparent;
+  border: 1px grey solid;
+}
+
+main input[type="submit"]:nth-of-type(2):hover {
+  background-color: hsla(167, 6%, 44%, 0.4);
+}
+
+section.hero {
+  text-align: center;
+  margin: 80px;
+  color: hsl(50, 3%, 30%);
+}
+
+section.hero h3 {
+  color: rgb(166, 166, 166);
+}
+
+div.info {
+  display: flex;
+  margin: 50px;
+}
+
+div.info div {
+  border: 1px hsla(195, 2%, 68%, 0.5) solid;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: hsl(50, 3%, 30%);
+}
+
+div.info i {
+  background-color: hsl(217, 85%, 69%);
+  color: white;
+  border: 1px lightgrey solid;
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+section.learn {
+  background-color: hsl(0, 0%, 12%);
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+section.learn h3 {
+  color: hsl(0, 0%, 52%);
+}
+
+div.pics {
+  display: flex;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+div.pics div {
+  width: 40%;
+}
+
+div.pics div img {
+  border-radius: 5px;
+  width: 80%;
+}
+
+section.learn input[type="button"] {
+  font-size: 15px;
+  padding: 10px 25px;
+  border: 1px grey solid;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+}
+
+section.learn input[type="button"]:hover {
+  background-color: hsla(167, 6%, 44%, 0.4);
+  cursor: pointer;
+}
+
+section.img {
+  display: flex;
+  margin: 80px 0;
+}
+
+section.img {
+  margin-left: 15px;
+}
+
+section.img ul {
+  list-style: none;
+}
+
+section.img p {
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+}
+
+section.img input[type="submit"] {
+  font-size: 15px;
+  padding: 10px 25px;
+  border: 1px gray solid;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+section.img input[type="submit"]:hover {
+  background-color:  hsla(167, 6%, 84%, 0.4);
+  cursor: pointer;
+}
+
+section.img h3, section.img h4 {
+  font-size: 20px
+}
+
+section.img ul li {
+  padding: 10px 0;
+  border-bottom: 2px lightgray solid;
+}
+
+section.img ul li a {
+  color: hsl(217, 62%, 66%);
+}
+
+section.img aside ul li:nth-of-type(4) {
+  border-style: none;
+}
+
+section.img aside p {
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer div:nth-of-type(1), footer div:nth-of-type(2) {
+  flex: 1;
 }

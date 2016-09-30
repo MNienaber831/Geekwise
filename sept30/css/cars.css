@@ -1,0 +1,109 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+header {
+  color: white;
+  background-image: url(../img/home-slider-1-slide-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  font-size: 20px;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+}
+
+nav:hover {
+  cursor: pointer;
+}
+
+nav img {
+  width: auto;
+  height: 40px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px;
+}
+
+nav ul li:hover {
+  color: hsl(199, 100%, 48%);
+}
+
+nav ul li:nth-of-type(1) {
+  color: hsl(199, 100%, 48%);
+}
+
+div.header {
+  display: flex;
+}
+
+div.header h2{
+  font-size: 250px;
+  text-align: center;
+  margin-top: none;
+}
+
+section.pics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.pics div {
+  width: 25%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+section.pics div p {
+  padding-left: 20px;
+}
+
+section.pics div:nth-of-type(1){
+  background-image: url(../img/home-21-1025x781.jpg);
+}
+
+section.pics div:nth-of-type(2){
+  background-image: url(../img/home-2-510x550.jpg);
+}
+
+section.pics div:nth-of-type(3){
+  background-image: url(../img/home-3-510x550.jpg);
+}
+
+section.pics div:nth-of-type(4){
+  background-image: url(../img/home-4-510x550.jpg);
+}
+
+section.pics div:nth-of-type(5){
+  background-image: url(../img/home-5-510x550.jpg);
+}
+
+section.pics div:nth-of-type(6){
+  background-image: url(../img/home-6-510x550.jpg);
+}
+
+section.pics div:nth-of-type(7){
+  background-image: url(../img/home-7-510x550.jpg);
+}
+
+section.pics div:nth-of-type(8){
+  background-image: url(../img/home-8-510x550.jpg);
+}
