@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  /*padding: 0 200px;*/
+  background-image: url(../img/slide-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  width: 862.667px;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(208, 24%, 51%);
+  font-size: 14px;
+  position: fixed;
+}
+
+h1 a {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+header div {
+  padding: 0 200px 200px;
+}
+
+header div h2 {
+  font-size: 180px;
+  margin: 0;
+  padding: 150px 0 0;
+}
+
+header div h3 {
+  font-size: 23px;
+  margin-top: 0;
+}
+
+header div input[type="button"] {
+  border: none;
+  background-color: hsl(205, 87%, 66%);
+  color: white;
+  cursor: pointer;
+  padding: 20px 40px;
+}
+
+header div input[type="button"]:hover {
+  background-color: white;
+  color: black;
+}
