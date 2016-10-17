@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  padding: 0 200px;
+  background-image: url(../img/slide-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav {
+  /*padding: 0 200px;*/
+  display: flex;
+  justify-content: space-between;
+  height: 10vw;
+  background-color: hsla(0, 0%, 0%, .25)
+}
+
+nav h1 {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav h1 a {
+  display: inline-block;
+  width: 122px;
+  height: 100%;
+  opacity: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+nav li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: -200%;
+  left: 0;
+  background-image: linear-gradient(
+    hsla(189, 69%, 49%, .75),
+    hsla(189, 69%, 49%, 0),
+    hsla(0, 0%, 100%, .75)
+    );
+  transition: top 400ms ease-in-out;
+}
+
+nav li:hover::after {
+  top: 100%;
+}
+
+nav li span {
+  flex: none;
+  display: flex;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 300ms ease-in-out;
+}
+
+nav li span:first-child {
+  background-color: hsla(189, 69%, 49%, 0);
+  transition: background-color 400ms ease-in-out;
+}
+
+nav li span:last-child {
+  background-color: hsla(0, 0%, 100%, 0);
+  transition: background-color 400ms ease-in-out;
+}
+
+nav li:hover span {
+  transform: translateY(0%);
+}
+
+nav li:hover span:first-child {
+  background-color: hsla(189, 69%, 49%, 1);
+}
+
+nav li:hover span:last-child {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav li a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/*nav {
+  width: 862.667px;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(208, 24%, 51%);
+  font-size: 14px;
+  position: fixed;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}*/
+
+header div {
+  padding-bottom: 200px;
+}
+
+header div h2 {
+  font-size: 180px;
+  margin: 0;
+  padding: 150px 0 0;
+}
+
+header div h3 {
+  font-size: 23px;
+  margin-top: 0;
+}
+
+header div input[type="button"] {
+  border: none;
+  background-color: hsl(205, 87%, 66%);
+  color: white;
+  cursor: pointer;
+  padding: 20px 40px;
+}
+
+header div input[type="button"]:hover {
+  background-color: white;
+  color: black;
+}
+
+section#type {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin: 100px 120px;
+}
+
+section#type div {
+  background-color: hsl(205, 87%, 66%);
+  width: 25vw;
+}
+
+section#type div:hover {
+  background-color: hsl(0, 0%, 14%);
+  color: white;
+  transition: all 350ms ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+  section#type {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+section#type div img {
+  width: 7vw;
+  height: 7vw;
+  margin: 0;
+  padding: 45px 0 45px 25px;
+}
+
+section#type div h3 {
+  margin: 0;
+  font-size: 35px;
+  padding: 0 0 30px 25px;
+}
+
+section#type div h4 {
+  margin: 0;
+  padding: 0 0 10px 25px;
+}
+
+section#type div p {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 25px 50px;
+}
+
+section#type div input[type="button"] {
+  border: none;
+  color: hsl(205, 87%, 66%);
+  margin-left: 25px;
+  margin-bottom: 65px;
+  padding: 10px 35px;
+}
+
+section#type div input[type="button"]:hover {
+  background-color: hsl(205, 87%, 66%);
+  color: white;
+  transition: all 250ms ease-in-out;
+}
