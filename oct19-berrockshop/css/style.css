@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'BrushScript';
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot');
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.svg#eb21f6604ba28d5573abad1c01255830') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'Fraktur';
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot');
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.svg#f78369fb7f540f355d128fc492e4218d') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+
+body {
+  margin: 0;
+  padding: 20px 300px;
+  background-color: hsl(356, 85%, 21%);
+}
+
+header {
+  display: flex;
+  text-align: center;
+  border: 5px hsl(0, 0%, 9%) solid;
+}
+
+header div {
+  flex: 1;
+  background-color: white;
+  font-family: 'Fraktur';
+  color: hsl(58, 94%, 29%);
+}
+
+h1 {
+  margin: 0;
+}
+
+header img {
+  width: 100%;
+  flex: 3;
+  border-left: 5px hsl(0, 0%, 9%) solid;
+}
+
+/*section one*/
+
+main {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border: 5px hsl(0, 0%, 9%) solid;
+  display: flex;
+  flex-direction: column;
+}
+
+main ul {
+  margin: 20px 35px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border-top: 3px gray dotted;
+  border-bottom: 3px gray dotted;
+}
+
+main ul li {
+  padding: 0 30px;
+}
+
+main ul li a {
+  text-decoration: none;
+}
+
+#info {
+  display: flex;
+  margin: 5px 0 0 70px;
+}
+
+main #info aside:first-of-type img {
+  float: right;
+  width: 150px;
+  height: auto;
+}
+
+aside:last-of-type > div {
+  border: 2px hsl(0, 0%, 9%) solid;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 12px;
+}
