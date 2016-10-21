@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'BrushScript';
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot');
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.svg#eb21f6604ba28d5573abad1c01255830') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'Fraktur';
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot');
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.svg#f78369fb7f540f355d128fc492e4218d') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+
+/*fonts above*/
+
+body {
+  margin: 0;
+  padding: 20px 300px;
+  background-color: hsl(356, 85%, 21%);
+}
+
+header {
+  display: flex;
+  text-align: center;
+  border: 5px hsl(0, 0%, 9%) solid;
+}
+
+header div {
+  flex: 1;
+  background-color: white;
+  font-family: 'Fraktur';
+  color: hsl(58, 94%, 29%);
+}
+
+h1 {
+  margin: 0;
+  color: hsl(52, 72%, 56%);
+  text-shadow:
+    -1px -1px 1px hsl(0, 0%, 8%),
+    1px -1px 1px hsl(0, 0%, 8%),
+    -1px 1px 1px hsl(0, 0%, 8%),
+    1px 1px 1px hsl(0, 0%, 8%);
+}
+
+header img {
+  width: 100%;
+  flex: 3;
+  border-left: 5px hsl(0, 0%, 9%) solid;
+}
+
+/*header above*/
+
+main {
+  font-family: 'BrushScript';
+  background-color: white;
+  margin: 0;
+  padding: 0 25px;
+  border: 5px hsl(0, 0%, 9%) solid;
+  display: flex;
+  flex-direction: column;
+}
+
+/*navigation start*/
+
+main nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  border-top: 3px gray dotted;
+  border-bottom: 3px gray dotted;
+  color: white;
+  text-shadow:
+    -1px -1px 0 hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 0 hsl(0, 79%, 34%);
+}
+
+main nav ul li:hover{
+  color: white;
+  text-shadow:
+    -1px -1px 10px hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 10px hsl(0, 79%, 34%);
+}
+
+main ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*navigation end*/
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 30px 0 50px;
+}
+
+main #info aside:first-of-type h2 {
+  color: white;
+  text-shadow:
+    -1px -1px 0 hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 0 hsl(0, 79%, 34%);
+}
+
+main #info aside:first-of-type img {
+  float: right;
+  width: 150px;
+  height: auto;
+}
+
+aside:last-of-type > div {
+  border: 2px hsl(0, 0%, 9%) solid;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+aside:last-of-type > div:nth-of-type(2) span {
+  margin-left: 60px;
+}
+
+aside:last-of-type h3 {
+  color: hsl(39, 97%, 45%);
+  text-shadow:
+    -1px -1px 0 hsl(28, 95%, 27%),
+    1px -1px 0 hsl(28, 95%, 27%),
+    -1px 1px 0 hsl(28, 95%, 27%),
+    1px 1px 0 hsl(28, 95%, 27%);
+    background-color: white;
+  position: absolute;
+}
+
+aside:last-of-type div:nth-of-type(1) h3 {
+  top: 190px;
+  left: 665px;
+}
+
+aside:last-of-type div:nth-of-type(2) h3 {
+  top: 315px;
+  left: 665px;
+}
+
+aside:last-of-type div:nth-of-type(3) h3 {
+  top: 415px;
+  left: 665px;
+}
+
+aside:last-of-type div:nth-of-type(4) h3 {
+  top: 525px;
+  left: 665px;
+}
+
+aside:last-of-type div:nth-of-type(2) {
+  text-align: center;
+}
+
+aside:last-of-type div:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+}
+
+main div#info aside:last-of-type div:last-of-type a {
+  color: hsl(0, 79%, 34%);
+}
+
+main div#info aside:last-of-type div:last-of-type a:hover {
+  background-color: hsl(0, 79%, 34%);
+  color: white;
+}
+
+p, main div#info aside:last-of-type div:last-of-type a {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+/*mainly history page*/
+
+#history, #menu, #news, #contact {
+  font-family: 'BrushScript';
+  background-color: white;
+  margin: 0;
+  padding: 0 25px;
+  border: 5px hsl(0, 0%, 9%) solid;
+  display: flex;
+  flex-direction: column;
+}
+
+#history nav ul, #menu nav ul, #news nav ul, #contact nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  border-top: 3px gray dotted;
+  border-bottom: 3px gray dotted;
+  color: white;
+  text-shadow:
+    -1px -1px 0 hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 0 hsl(0, 79%, 34%);
+}
+
+#history nav ul li:hover{
+  color: white;
+  text-shadow:
+    -1px -1px 10px hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 10px hsl(0, 79%, 34%);
+}
+
+#history ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section#history aside:first-of-type h2 {
+  color: white;
+  text-shadow:
+    -1px -1px 0 hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 0 hsl(0, 79%, 34%);
+}
+
+section#history aside:first-of-type img:first-of-type {
+  float: right;
+}
+
+section#history aside:first-of-type img:last-of-type {
+  float: left;
+}
+
+div.top i, a {
+  color: white;
+  text-shadow:
+    -1px -1px 0 hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 0 hsl(0, 79%, 34%);
+  text-decoration: none;
+}
+
+#history div {
+  display: flex;
+}
+
+#history div aside:first-of-type {
+  flex: 3;
+}
+
+#history div aside:last-of-type {
+  flex: 1;
+}
+
+/*menu page*/
+
+#menu .border{
+  border: 1px hsl(0, 79%, 34%) solid;
+  border-radius: 15px;
+}
+
+#menu, #news .twocolumns {
+  display: flex;
+}
+
+#menu .main {
+  margin-bottom: 20px;
+}
+
+#menu, #contact .center {
+  text-align: center;
+}
+
+#menu .twocolumns div:first-of-type {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#menu .twocolumns div:last-of-type {
+  flex: 1;
+}
+
+#main, h2, h3 {
+  color: white;
+  text-shadow:
+    -1px -1px 0 hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 0 hsl(0, 79%, 34%);
+}
+
+#news, .twocolumns {
+  justify-content: space-between;
+}
+
+#news h4 {
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+#news .white2red, #contact main .white2red {
+  display: flex;
+  justify-content: flex-end;
+  height: 5vw;
+  background-image: linear-gradient(
+    to right,
+    hsla(0, 100%, 100%, 1) 15%,
+    hsla(0, 100%, 95%, 0.1) 15%,
+    hsla(0, 40%, 90%, .3) 20%,
+    hsla(0, 90%, 30%, .2) 50%
+    );
+  border-bottom: 4px dotted gray;
+}
+
+#news #margin {
+  margin: 20px 0;
+}
+
+#news .white2red:first-of-type {
+  border-bottom: 2px gray dotted;
+}
+
+#contact main {
+  border: none;
+}
+
+#contact main .white2red {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact main .white2red i {
+  color: white;
+  text-shadow:
+    -1px -1px 0 hsl(0, 79%, 34%),
+    1px -1px 0 hsl(0, 79%, 34%),
+    -1px 1px 0 hsl(0, 79%, 34%),
+    1px 1px 0 hsl(0, 79%, 34%);
+  font-size: 40px;
+}
+
+#contact main form a {
+  font-family: sans-serif;
+  text-shadow: none;
+  color: hsl(0, 79%, 34%);
+  font-size: 12px;
+  border: 1px hsl(0, 79%, 34%) solid;
+}
