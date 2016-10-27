@@ -132,3 +132,7 @@ aside {
   float: right;
   padding: 0 50px 25px;
 }
+
+main div {
+  border: 2px solid hsl(0, 0%, 100%);
+}
