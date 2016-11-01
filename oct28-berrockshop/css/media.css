@@ -27,6 +27,17 @@
       padding: 3px 20px 22px;
     }
 
+    nav a:hover {
+      font-size: 21px;
+      text-decoration: none;
+      color: white;
+      text-shadow:
+          1px 1px .25px hsl(0, 100%, 16%),
+          -1px 1px .25px hsl(0, 100%, 16%),
+          1px -1px .25px hsl(0, 100%, 16%),
+          -1px -1px .25px hsl(0, 100%, 16%);
+    }
+
     header div {
       display: none;
     }

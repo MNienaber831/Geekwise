@@ -107,8 +107,6 @@ nav ul {
 nav a {
     font-size: 21px;
     text-decoration: none;
-
-
     transition: text-shadow 250ms ease-in-out;
 }
 nav a:hover {
@@ -272,4 +270,6 @@ form input[type="submit"]{
     border: 1px solid hsl(0, 100%, 16%);
     font-weight: bold;
     background-color: hsl(60, 100%, 97%);
+    color: hsl(0, 100%, 16%);
+    cursor: pointer;
 }

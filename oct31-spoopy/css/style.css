@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+body {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+  background-color: black;
+}
+
+
+header ul {
+  margin: 0;
+}
+
+#parties {
+  color: hsl(36, 11%, 45%);
+  display: flex;
+}
+
+/*#parties section {
+  background-image: url(../img/leftbg.jpg);
+  background-repeat: no-repeat;
+  float: left;
+  width: 70%;
+}*/
+
+#parties section div {
+  padding: 10px 0;
+  border-bottom-color: hsl(36, 11%, 45%);
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+}
+
+#parties section a {
+  color: hsl(36, 11%, 45%);
+}
+
+#parties section h2 {
+  color: hsl(30, 100%, 26%);
+}
+
+/*#parties aside {
+  background-image: url(../img/rightbg.png);
+  background-repeat: no-repeat;
+  float: right;
+  width: 30%;
+}*/
