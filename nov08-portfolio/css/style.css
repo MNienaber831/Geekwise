@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre');
+
+body {
+  margin: 0;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+header {
+  background-image: url(../img/download.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header div h1 {
+  margin: 0;
+  color: hsl(0, 0%, 90%);
+  font-size: 80px;
+}
+
+header div img {
+  border-radius: 100%;
+  width: auto;
+  height: 350px;
+}
+
+.margin {
+  margin: 40px 150px;
+}
+
+h2 {
+  font-size: 50px;
+  color: hsl(168, 22%, 50%);
+  text-decoration: underline;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container img {
+  width: 35%;
+  height: 100%;
+}
+
+.box {
+  width: 35vw;
+  margin: 35px 0;
+}
+
+#volunteer {
+  padding: 35px 0;
+  background-image: url(../img/headphones.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  color: hsl(0, 0%, 90%);
+  line-height: 1.8;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  color: white;
+}
+
+/*section {
+  height: 600px;
+}*/
+
+.tri {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.tri:first-of-type {
+  margin-left: 0;
+}
+
+.box, .tri {
+  background-color: hsl(168, 22%, 50%);
+  transition: all 400ms ease-in-out;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.box p, .tri p {
+  transition: all 400ms ease-in-out;
+}
+
+.box:hover {
+  background-color: hsl(168, 9%, 67%);
+}
+
+.box:hover p {
+  color: white;
+}
+
+.tri:hover {
+  background-color: hsl(168, 9%, 67%);
+}
+
+.tri:hover p {
+  color: white;
+}
+
+.contact {
+  padding: 20px 0;
+  /*background-color: hsl(168, 9%, 67%);*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: hsl(168, 22%, 50%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(168, 16%, 29%);
+}
+
+footer {
+  background-color: hsl(168, 22%, 50%);
+  height: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+footer div {
+  margin: 0 150px;
+}
+
+footer p {
+  text-align: left;
+  margin: 0;
+}
+
+@media screen and (max-width: 799px) {
+  main img {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .box {
+    margin: 20px auto;
+  }
+
+  .margin .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tri {
+    margin: 10px 0;
+  }
+}

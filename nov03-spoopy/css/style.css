@@ -1,0 +1,95 @@
+html{
+  background-image: url(../img/headbg.jpg) ,url(../img/bobybg.jpg);
+  background-color: black;
+  background-position: center top;
+  background-repeat: no-repeat, repeat-x;
+  color: white;
+}
+
+.container{
+  width: 800px;
+  margin: 0 auto;
+}
+
+section{
+  width: 64%;
+  float: left;
+  background-image: url(../img/leftbg.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+aside{
+  width: 34%;
+  float: right;
+  background-image: url(../img/rightbg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+#mega {
+  background-color: hsl(9, 83%, 9%);
+}
+#mega .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#mega .container div {
+  width: calc(75% / 3);
+}
+
+main::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body > :first-child {
+  position: relative;
+}
+
+body > :first-child .pumpkin {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+}
+
+#mega .container {
+  padding: 30px 0;
+  position: relative;
+}
+
+#mega .container .pumpkin {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 799px) {
+
+  .container {
+    width: 100%;
+  }
+
+  section{
+    width: 100%;
+    background-image: none;
+    margin-bottom: 45px;
+  }
+
+  aside {
+    display: none;
+  }
+
+#mega .container {
+  display: block;
+}
+
+#mega .container div{
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 450px) {
+
+}
