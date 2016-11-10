@@ -31,7 +31,7 @@ header div img {
 }
 
 .margin {
-  margin: 40px 150px;
+  margin: 0 10vw;
 }
 
 h2 {
@@ -43,14 +43,20 @@ h2 {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .container img {
+  min-width: 270px;
   width: 35%;
   height: 100%;
+  /*transition: transform 250ms ease-in-out;*/
 }
+
+/*.container img:hover{
+  transform: scale(1.2);
+}*/
 
 .box {
   width: 35vw;
@@ -84,6 +90,7 @@ h3 {
 .tri {
   margin-left: 20px;
   flex: 1;
+  height: 100%;
 }
 
 .tri:first-of-type {
@@ -143,24 +150,23 @@ a:hover {
 
 footer {
   background-color: hsl(168, 22%, 50%);
-  height: 10vw;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 footer div {
-  margin: 0 150px;
+  width: 100%;
+  text-align: center;
 }
 
 footer p {
   text-align: left;
+  padding: 5vw 0;
   margin: 0;
 }
 
 @media screen and (max-width: 799px) {
-  main img {
-    display: none;
-  }
 
   h2 {
     text-align: center;
@@ -168,6 +174,13 @@ footer p {
 
   .box {
     margin: 20px auto;
+  }
+}
+
+
+@media screen and (max-width: 1060px) {
+  main img {
+    display: none;
   }
 
   .margin .container {
@@ -177,5 +190,16 @@ footer p {
 
   .tri {
     margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  header div h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+    text-align: center;
   }
 }
