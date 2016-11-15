@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.margin {
+  padding: 0 100px;
+}
+
+header {
+  background-image: url(../img/pic01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 650px;
+}
+
+li {
+  list-style: none;
+}
