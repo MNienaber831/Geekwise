@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+
+body {
+  margin: 0;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.margin {
+  padding: 80px 50px;
+}
+
+header {
+  color: white;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-size: 14px;
+  padding: 15px 20px;
+  border-radius: 7px;
+}
+
+li:hover, h1:hover {
+  cursor: pointer;
+}
+
+li:first-of-type {
+  background-color: #2651a8;
+}
+
+header div {
+  margin: auto;
+  text-align: center;
+}
+
+header div h2 {
+  font-size: 60px;
+  margin: 0;
+}
+
+header div h3 {
+  margin: 5px 0  100px 0;
+  font-size: 30px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+header div a {
+  text-decoration: none;
+  color: white;
+  background-color:  #2651a8;
+  padding: 25px 55px;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h2 {
+  font-size: 45px;
+  margin-bottom: 0;
+}
+
+.info h3 {
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+.info > div {
+  /*margin: auto;*/
+  text-align: center;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#info div {
+  width: calc(90% / 3);
+}
+
+#info div p {
+  margin-bottom: 60px;
+  line-height: 2;
+  color: hsla(0, 0%, 0%, 0.6);
+}
+
+#info div a {
+  /*margin-top: 80px;*/
+  padding: 20px 35px;
+  background-color: #2651a8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.extra {
+  background-color: #2651a8;
+  color: hsla(0, 0%, 100%, 0.8);
+  text-align: center;
+}
+
+.extra h3 {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.extra div p {
+  margin-bottom: 80px;
+}
+
+.extra div p a {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.extra div:nth-of-type(2) p + a {
+  color: #2651a8;
+  text-decoration: none;
+  background-color: white;
+  padding: 25px 55px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.88);
+  color: hsla(0, 0%, 100%, 0.3);
+}
+
+footer p a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.6);
+}
