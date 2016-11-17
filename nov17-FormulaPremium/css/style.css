@@ -1,42 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow|Work+Sans:200');
+
 body {
   margin: 0;
 }
 
 .sidenav {
-   height: 100%;
-   width: 0;
-   position: fixed;
-   z-index: 1;
-   top: -13px;
-   right:0px;
-   background-color: #ffffff;
-   overflow-x: hidden;
-   padding-top: 60px;
-   transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: -13px;
+  right:0px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 .sidenav a {
-   padding: 8px 8px 8px 32px;
-   text-decoration: none;
-   font-size: 25px;
-   color: #818181;
-   display: block;
-   transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-   color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-   position: absolute;
-   top: 0;
-   right: 25px;
-   font-size: 36px;
-   margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
+
 span {
-float:right;
-margin-top:0;
+  float: right;
+  margin-top: 0;
 }
 
 @media screen and (max-height: 450px) {
@@ -55,7 +58,21 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   height: 500px;
+  z-index: 1;
+}
+
+header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: hsla(0, 0%, 40%, 0.5);
+  z-index: -1;
 }
 
 nav {
@@ -68,7 +85,13 @@ nav {
 }
 
 h1 {
+  font-family: 'Work Sans', sans-serif;
   margin: 0;
+  color: white;
+}
+
+h1 b {
+  font-weight: bold;
 }
 
 /*ul {
@@ -80,6 +103,44 @@ ul li a {
 }*/
 
 header div {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   text-align: center;
+  width: 45%;
+}
+
+header div h2 {
+  font-family: 'Pragati Narrow', sans-serif;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 2;
+  margin: auto;
+  font-size: 55px;
+  text-align: center;
+  border-bottom: 1px white solid;
+  width: 75%;
+}
+
+header div p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+header div a {
+  letter-spacing: 3px;
+  font-family: 'Pragati Narrow', sans-serif;
+  padding: 10px 70px;
+  border-radius: 5px;
+  margin: auto;
+  color: black;
+  background-color: #FFFFFF;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+
+
+}
+
+header div a:hover {
+  background-color: #65caea;
+  color: #FFFFFF;
 }
