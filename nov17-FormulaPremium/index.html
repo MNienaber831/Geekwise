@@ -7,19 +7,27 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="javascript.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <h1><b>FORMULA</b> BY PIXELARITY</h1>
-      <ul>
-        <li><a href="#">MENU</a></li>
-      </ul>
+      <div id="mySidenav" class="sidenav">
+        <ul>
+          <span onclick="closeNav()"><a href="#"><i class="fa fa-times" aria-hidden="true"></i>
+</a></span>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">Generic</a></li>
+     <li><a href="#">Elements</a></li>
+     </ul>
+    </div>
+    <span onclick="openNav()" ><a href="#">Menu <i class="fa fa-bars" aria-hidden="true"></i>
+</a></span>
     </nav>
 
     <div>
       <h2>THIS IS FORMULA</h2>
-      <hr>
       <p>Sed efficitur nisi ac turpis venenatis varius. Suspendisse sed dictum leo veroeros sed ipsum amet pellentesque venenatis magna hendrerit blandit veroeros.</p>
       <a href="#">GET STARTED</a>
     </div>
