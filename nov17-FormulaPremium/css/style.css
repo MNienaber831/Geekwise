@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  color: #8e8e8e;
 }
 
 .sidenav {
@@ -156,6 +157,14 @@ header div a:hover {
   color: #FFFFFF;
 }
 
+li a {
+ color: #545454!important;
+}
+
+header ul {  list-style: none;
+ text-align: left;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -185,7 +194,7 @@ h3 {
   line-height: 1;
   letter-spacing: 3px;
   border-bottom: 2px hsl(0, 0%, 94%) solid;
-  width: 40%;
+  width: 45%;
   text-align: center;
 }
 
@@ -194,8 +203,14 @@ h3 {
   font-size: 20px;
 }
 
+section:nth-of-type(2) {
+  height: 950px;
+}
+
 section:nth-of-type(2) h3 {
   margin: auto;
+  /*margin-top: 70px;
+  margin-bottom: 50px;*/
 }
 
 section .parent {
@@ -204,8 +219,11 @@ section .parent {
 }
 
 section .parent .quad {
-  width: calc(100% / 2);
+  width: calc(82.55% / 2);
   text-align: center;
+  padding: 40px;
+  border: 2px hsl(0, 0%, 94%) solid;
+  border-radius: 5px;
 }
 
 section .parent .quad i.fa {
@@ -229,11 +247,64 @@ section .parent .quad:nth-of-type(3) i.fa {
 }
 
 section .parent .quad:nth-of-type(4) i.fa {
-  background-color: #a7b7f1;
+  background-color: #c6b6f2;
   padding: 20px 25px;
 }
 
 section .parent .quad h4 {
   color: #777777;
   letter-spacing: 2px;
+}
+
+section .parent .quad p {
+  color: #8e8e8e;
+  line-height: 2;
+}
+
+section:last-of-type {
+  height: 400px;
+}
+
+section:last-of-type div {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section:last-of-type div p {
+  width: 60%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section:last-of-type div a {
+  margin: auto;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-family: 'Pragati Narrow', sans-serif;
+  padding: 10px 70px;
+  border-radius: 5px;
+}
+
+section:last-of-type div a:first-of-type {
+  margin: 25px 0 20px 0;
+  background-color: #7bd2ed;
+  color: #ffffff;
+  transition: background-color 200ms ease-in-out;
+}
+
+section:last-of-type div a:first-of-type:hover {
+  background-color: #65caea;
+}
+
+section:last-of-type div a:last-of-type {
+  color: #545454;
+  border: 2px hsl(0, 0%, 94%) solid;
+  transition: all 250ms ease-in-out;
+}
+
+section:last-of-type div a:last-of-type:hover {
+  color: #7bd2ed;
+  border-color: #65caea;
 }
