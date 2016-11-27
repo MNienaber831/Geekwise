@@ -167,7 +167,7 @@ hr {
 
 #list .parent .quad p {
   line-height: 20px;
-  width: 30vw;
+  /*width: 30vw;*/
   text-align: center;
   margin: auto;
 }
