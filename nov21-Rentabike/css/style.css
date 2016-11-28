@@ -199,9 +199,13 @@ hr {
   height: 280px;
   display: flex;
   flex-direction: column;
-  /*transition: all 1s ease-in-out;*/
+  transition: all 1s ease-in-out;
   position: relative;
   z-index: 1;
+}
+
+#routes .parent .quad2 h5 {
+  transition: all 250ms ease-in-out;
 }
 
 #routes .parent .quad2:hover {
@@ -404,10 +408,15 @@ hr {
   text-decoration: none;
   color: white;
   background-color: hsl(173, 98%, 35%);
+  transition: all 250ms ease-in-out;
   border: none;
   padding: 15px 40px;
   margin: auto;
   margin-top: 50px;
+}
+
+#news .button:hover {
+  background-color: hsl(173, 98%, 25%);
 }
 
 #campaign {
@@ -421,6 +430,7 @@ hr {
 #campaign p {
   margin: 0;
   font-size: 50px;
+  color: white;
 }
 
 #campaign a {
@@ -439,6 +449,10 @@ footer {
   color: white;
 }
 
+footer h3 {
+  font-size: 30px;
+}
+
 footer p {
   font-weight: 200;
 }
@@ -451,6 +465,11 @@ footer div {
   padding: 16px 18px;
   border-radius: 50%;
   z-index: 1;
+  transition: all 250ms ease-in-out;
+}
+
+footer div:hover {
+  background-color: hsl(173, 100%, 43%)
 }
 
 footer div i.fa {
@@ -490,6 +509,10 @@ footer div i.fa {
     width: calc(95% / 2);
   }
 
+  #list .parent .quad:first-of-type, #list .parent .quad:nth-of-type(2) {
+    margin-bottom: 15px;
+  }
+
   #routes .parent {
     justify-content: center;
   }
@@ -510,8 +533,14 @@ footer div i.fa {
     margin-top: 15px;
   }
 
+  #campaign {
+    flex-direction: column;
+  }
+
   #campaign p {
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
   }
 
   #campaign a {
