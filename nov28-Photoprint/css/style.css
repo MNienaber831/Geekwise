@@ -25,7 +25,7 @@ a.btn {
   font-weight: 600;
   display: inline-flex;
   border: 2px white solid;
-  /*transition: all 250ms ease-in-out;*/
+  transition: all 250ms ease-in-out;
 }
 
 a.btn:hover {

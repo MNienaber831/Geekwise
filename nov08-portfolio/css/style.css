@@ -11,17 +11,55 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 1100px;
+  height: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+#two {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#two nav {
+  width: 80vw;
+}
+
+#two nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#two nav ul li {
+  list-style: none;
+}
+
+#two nav ul li a {
+  color: white;
+  text-shadow:
+    1px 1px .25px hsl(168, 16%, 29%),
+    -1px 1px .25px hsl(168, 16%, 29%),
+    1px -1px .25px hsl(168, 16%, 29%),
+    -1px -1px .25px hsl(168, 16%, 29%);
+  transition: all 250ms ease-in-out;
+}
+
+#two nav ul li a:hover {
+  color: hsl(168, 22%, 50%);
+}
+
 header div h1 {
   margin: 0;
   color: hsl(0, 0%, 90%);
   font-size: 80px;
+  text-shadow:
+    1px 1px .25px hsl(168, 16%, 29%),
+    -1px 1px .25px hsl(168, 16%, 29%),
+    1px -1px .25px hsl(168, 16%, 29%),
+    -1px -1px .25px hsl(168, 16%, 29%);
+  font-weight: 600;
 }
 
 header div img {
@@ -30,20 +68,31 @@ header div img {
   height: 350px;
 }
 
+main {
+  padding: 35px 0;
+}
+
+#bio {
+  flex-direction: column;
+}
+
 .margin {
   margin: 0 10vw;
 }
 
-h2 {
+h2 a, h2 {
   font-size: 50px;
   color: hsl(168, 22%, 50%);
   text-decoration: underline;
   margin: 0;
+  transition: all 250ms ease-in-out;
 }
+
+
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -61,6 +110,19 @@ h2 {
 .box {
   width: 35vw;
   margin: 35px 0;
+}
+
+main .bio .box {
+  width: 80vw;
+}
+
+main .bio {
+  flex-direction: column;
+  background-color: hsl(168, 22%, 50%);
+}
+
+main .bio .box:hover {
+  background-color: hsl(168, 22%, 50%);
 }
 
 #volunteer {
@@ -91,6 +153,16 @@ h3 {
   margin-left: 20px;
   flex: 1;
   height: 100%;
+}
+
+.tri2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tri2:nth-of-type(2) p{
+  order: 2;
 }
 
 .tri:first-of-type {
@@ -124,6 +196,34 @@ h3 {
   color: white;
 }
 
+#project {
+  padding: 35px 0;
+}
+
+#project .project {
+  display: flex;
+  flex-direction: column;
+}
+
+#project .project h3{
+  color: hsl(168, 22%, 50%);
+  text-decoration: underline;
+  margin: auto;
+}
+
+#project .project img {
+  width: 80vw;
+  margin: auto;
+}
+
+/*main .parent .websites {
+  margin: auto;
+}*/
+
+main .parent .websites img {
+  width: 50vw;
+}
+
 .contact {
   padding: 20px 0;
   /*background-color: hsl(168, 9%, 67%);*/
@@ -133,10 +233,20 @@ h3 {
   justify-content: center;
 }
 
+#contact p {
+  color: hsl(168, 22%, 50%);
+}
+
+#contact #inform p {
+  width: 50vw;
+  margin: auto;
+}
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 a {
@@ -149,6 +259,7 @@ a:hover {
 }
 
 footer {
+  padding: 0 10vw;
   background-color: hsl(168, 22%, 50%);
   display: flex;
   align-items: center;
