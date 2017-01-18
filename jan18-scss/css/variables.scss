@@ -1,0 +1,19 @@
+$base-color: hsl(0, 100%, 50%);
+$color-2: lighten(adjust-hue($base-color, 30deg), 10%);
+$color-3: adjust-hue($base-color, 60deg);
+$color-4: darken(adjust-hue($base-color,110deg), 10%);
+$color-5: adjust-hue($base-color, 240deg);
+$color-6: adjust-hue($base-color, 265deg);
+$color-7: adjust-hue($base-color, 275deg);
+
+$colors: $base-color $color-2 $color-3 $color-4 $color-5 $color-6 $color-7;
+$i: 1;
+
+// Color Functions
+/*
+lighten( 2 arguments );
+darken( 2 arguments );
+invert( 1 argument );
+complement( 1 argument );
+adjust-hue( 2 arguments );
+*/

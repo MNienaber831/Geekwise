@@ -1,0 +1,29 @@
+/*
+lighten( 2 arguments );
+darken( 2 arguments );
+invert( 1 argument );
+complement( 1 argument );
+adjust-hue( 2 arguments );
+*/
+ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+li {
+  list-style: none;
+  padding: 25px; }
+  li:nth-child(1) {
+    background-color: red; }
+  li:nth-child(2) {
+    background-color: #ff9933; }
+  li:nth-child(3) {
+    background-color: yellow; }
+  li:nth-child(4) {
+    background-color: #22cc00; }
+  li:nth-child(5) {
+    background-color: blue; }
+  li:nth-child(6) {
+    background-color: #6a00ff; }
+  li:nth-child(7) {
+    background-color: #9500ff; }
