@@ -1,0 +1,56 @@
+@import "_imports";
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: $primary-color;
+  @extend %border-style;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  background-color: pink;
+  padding: 10px;
+  // @extend %border-style;
+  @include border-style(green);
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:last-of-type {
+  @include border-style(purple);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul:first-of-type li {
+  @include width(5, green);
+}
+
+ul:nth-of-type(2) li {
+  @include width(7, purple);
+}
+
+ul:nth-of-type(3) li {
+  @include width(9, red);
+}
