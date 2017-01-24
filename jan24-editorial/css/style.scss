@@ -1,0 +1,104 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+body {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  color: darken($color-4, 30%);
+  font-size: 11px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  color: $color-2;
+  font-weight: 700;
+}
+
+.btn {
+  color: $color-3;
+  border: 1px solid $color-3;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+nav {
+  width: 300px;
+  > div {
+    background-color: $color-4;
+    padding: 20px;
+    input {
+      margin: 5px 0;
+      width: 90%;
+      padding: 7px;
+      border-radius: 3px;
+      border: 1px solid darken($color-4, 20%);
+    }
+  }
+  h3 {
+    margin: 20px 0;
+  }
+  h3 + hr {
+    border: 1.5px solid $color-3;
+    transform: translateY(-25px);
+    position: absolute;
+  }
+  h3 + hr:nth-of-type(1) {
+    width: 60px;
+  }
+  h3 + hr:nth-of-type(2) {
+    width: 120px;
+  }
+  ul li {
+    border-bottom: 1px solid $color-4;
+  }
+  ul:nth-of-type(1) li a {
+    display: block;
+    color: $color-2;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    transition: color 200ms ease-in-out;
+  }
+  li a:hover {
+    color: $color-3;
+  }
+  ul:nth-of-type(2) a {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 157px;
+  }
+  ul:nth-of-type(2) a:last-of-type {
+    height: auto;
+  }
+  ul:nth-of-type(2) li {
+    margin: 20px 0;
+  }
+  img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 250ms ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+
+div.container {
+  background-color: $color-1;
+  footer hr {
+    width: 110px;
+  }
+}
