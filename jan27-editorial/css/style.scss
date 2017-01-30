@@ -1,11 +1,16 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-body{
+// html {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+body {
   margin: 0;
   font-family: 'Roboto Slab';
 }
-ul{
+ul {
   list-style: none;
   padding: 0;
 }
@@ -194,7 +199,7 @@ nav{
 body > div{
   width: 90vw;
   float: right;
-  margin: 20px 4vw 0 1vw;
+  margin: 20px 4.3vw 0 0;
   transition: width 400ms ease-in-out;
 
   header{

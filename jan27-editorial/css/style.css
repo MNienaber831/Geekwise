@@ -181,7 +181,7 @@ nav {
 body > div {
   width: 90vw;
   float: right;
-  margin: 20px 4vw 0 1vw;
+  margin: 20px 4.3vw 0 0;
   transition: width 400ms ease-in-out; }
   body > div header {
     display: -webkit-flex;
