@@ -1,4 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre');
+
 body {
+  margin: 0;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+header {
+  background-image: url(../img/download.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+ nav {
+  width: 80vw;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-shadow:
+    1px 1px .25px hsl(168, 16%, 29%),
+    -1px 1px .25px hsl(168, 16%, 29%),
+    1px -1px .25px hsl(168, 16%, 29%),
+    -1px -1px .25px hsl(168, 16%, 29%);
+  transition: all 200ms ease-in-out;
+}
+
+nav ul li a:hover {
+  color: hsl(168, 22%, 50%);
+}
+
+nav ul li a:active {
+  color: #A9B8CF;
+}
+
+nav ul li a:focus {
+  color: #A1AFB8;
+}
+
+header div h1 {
+  margin: 0;
+  color: hsl(0, 0%, 90%);
+  font-size: 80px;
+  text-shadow:
+    1px 1px .25px hsl(168, 16%, 29%),
+    -1px 1px .25px hsl(168, 16%, 29%),
+    1px -1px .25px hsl(168, 16%, 29%),
+    -1px -1px .25px hsl(168, 16%, 29%);
+  font-weight: 600;
+}
+
+header div img {
+  border-radius: 100%;
+  width: auto;
+  height: 350px;
+}
+
+main {
+  padding: 35px 0;
+}
+
+#bio {
+  flex-direction: column;
+}
+
+.margin {
+  margin: 0 10vw;
+}
+
+h2 a, h2 {
+  font-size: 50px;
+  color: hsl(168, 22%, 50%);
+  text-decoration: none;
+  margin: 0;
+  transition: all 250ms ease-in-out;
+}
+
+h2 a:hover, h3 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container img {
+  min-width: 270px;
+  width: 35%;
+  height: 100%;
+  /*transition: transform 250ms ease-in-out;*/
+}
+
+/*.container img:hover{
+  transform: scale(1.2);
+}*/
+
+.box {
+  width: 35vw;
+  margin: 35px 0;
+}
+
+main .bio .box {
+  width: 80vw;
+}
+
+main .bio {
+  flex-direction: column;
+  background-color: hsl(168, 22%, 50%);
+}
+
+main .bio .box:hover {
+  background-color: hsl(168, 22%, 50%);
+}
+
+#volunteer {
+  padding: 35px 0;
+  background-image: url(../img/headphones.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#volunteer h2 a:hover {
+  color: hsl(168, 9%, 67%);
+}
+
+p {
+  color: hsl(0, 0%, 90%);
+  line-height: 1.8;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  color: white;
+}
+
+/*section {
+  height: 600px;
+}*/
+
+.tri {
+  margin-left: 20px;
+  flex: 1;
+  height: 100%;
+}
+
+.tri2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tri2:nth-of-type(2) p{
+  order: 2;
+}
+
+.tri:first-of-type {
+  margin-left: 0;
+}
+
+.box, .tri {
+  background-color: hsl(168, 22%, 50%);
+  transition: all 400ms ease-in-out;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.box p, .tri p {
+  transition: all 400ms ease-in-out;
+}
+
+.box:hover {
+  background-color: hsl(168, 9%, 67%);
+}
+
+.box:hover p {
+  color: white;
+}
+
+.tri:hover {
+  background-color: hsl(168, 9%, 67%);
+}
+
+.tri:hover p {
+  color: white;
+}
+
+#project {
+  padding: 35px 0;
+}
+
+#project .project {
   display: flex;
   flex-direction: column;
+}
+
+#project .project h3{
+  color: hsl(168, 22%, 50%);
+  text-decoration: underline;
+  margin: auto;
+}
+
+#project .project img {
+  width: 80vw;
+  margin: auto;
+}
+
+/*main .parent .websites {
+  margin: auto;
+}*/
+
+main .parent .websites img {
+  width: 50vw;
+}
+
+.contact {
+  padding: 20px 0;
+  /*background-color: hsl(168, 9%, 67%);*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact p {
+  color: hsl(168, 22%, 50%);
+}
+
+#contact #inform p {
+  width: 50vw;
+  margin: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  color: hsl(168, 22%, 50%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(168, 16%, 29%);
+}
+
+footer {
+  padding: 0 10vw;
+  background-color: hsl(168, 22%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  text-align: left;
+  padding: 5vw 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 799px) {
+
+  h2 {
+    text-align: center;
+  }
+
+  .box {
+    margin: 20px auto;
+  }
+}
+
+
+@media screen and (max-width: 1060px) {
+  main img {
+    display: none;
+  }
+
+  .margin .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tri {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  header div h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
 }
