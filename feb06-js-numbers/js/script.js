@@ -59,21 +59,20 @@ var numThree = '3',
 // var ssN = prompt('What is your Social Security Number?');
 // console.log( parseInt(ssN) );
 
-var username = prompt('What is your name?')
-    intro = "Welcome to my story " + username + '.' +  prompt('What is your dog\'s name?');
-alert(intro);
+// var username = prompt('What is your name?')
+//     intro = "Welcome to my story " + username + '.' +  prompt('What is your dog\'s name?');
+// alert(intro);
 
 //All 3 alerts (alert, prompt, confirm)
-//4 objects (number, float, string, boolean)
+//Use 4 objects (number, float, string, boolean)
 //Minimum of 10 variables saves
 //Minimum of 5 confirms
 //Use 1 if statement
 //Use 2 mathematical operations (+, -, *, /)
-/*
+
 if(isNaN(numFive)){
    alert('its not a number');
  }
  else{
    alert('it is a nuumber');
 }
-*/
