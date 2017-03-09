@@ -1,0 +1,56 @@
+#meter {
+  background-color: white;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  box-shadow: 4px 4px 8px hsla(0, 0%, 0%, .5);
+  padding: 10px;
+  z-index: 9999;
+}
+
+#meter ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 500px;
+  background-image: url(../img/pic01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  padding: 15vw 10vw;
+  text-align: center;
+}
+
+.colorIn {
+  background-color: red;
+  transition: background-color 2000ms ease-out;
+}
+
+.colorIn2 {
+  background-color: blue;
+  transition: background-color 2000ms ease-out;
+}
+
+.colorIn3 {
+  background-color: yellow;
+  transition: background-color 2000ms ease-out;
+}
+
+section img {
+  width: 80%;
+}
+
+footer {
+  text-align: center;
+}
