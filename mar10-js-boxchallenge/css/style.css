@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#meter {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  box-shadow: 4px 4px 8px hsla(0, 0%, 0%, .5);
+  background-color: lightgray;
+  padding: 10px;
+  color: black;
+}
+
+#meter ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#meter li {
+  list-style: none;
+}
+
+#meter form {
+  display: flex;
+  flex-direction: column;
+}
+
+#meter form input[type="submit"] {
+  margin-top: 5px;
+  border: 1px gray solid;
+}
+
+#meter form p {
+  padding: 5px;
+  margin: 0;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+nav ul {
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  list-style: none;
+  padding: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section div {
+  width: 50%;
+  text-align: center;
+}
+
+section:nth-of-type(2) div{
+  order: 2;
+}
+
+section img {
+  border-radius: 50%;
+  width: 30%;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+}
