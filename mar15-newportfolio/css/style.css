@@ -1,0 +1,58 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1vw 3vw;
+  background-color: hsl(0, 0%, 10%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.diamond {
+  height: 120px;
+  width: 120px;
+  background-color: hsl(0, 0%, 85%);
+  transform: rotate(45deg);
+  transition: all 1s ease-in-out;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  left: 5px;
+}
+
+nav ul {
+  padding: 0;
+  width: inherit;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  padding:
+}
+
+#index main {
+  height: 79.5vh;
+  background-image: url(../img/ranpic01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

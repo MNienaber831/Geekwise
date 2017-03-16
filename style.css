@@ -86,12 +86,6 @@ main {
   margin: 0 10vw;
 }
 
-#main main #hover {
-  display: flex;
-  /*justify-content: flex-start;*/
-  align-items: baseline;
-  transition: all 300ms ease-out;
-}
 
 h2 a, h2 {
   font-size: 50px;
@@ -165,8 +159,16 @@ p {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   color: white;
+}
+
+h4 a {
+  padding: 15px;
+}
+
+h4 a:hover {
+  text-decoration: underline;
 }
 
 /*section {
@@ -241,12 +243,23 @@ h3 {
   margin: auto;
 }
 
-/*main .parent .websites {
-  margin: auto;
-}*/
+main .parent .websites {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease-out;
+}
+
+main .parent .websites h4 {
+  color: hsl(168, 22%, 50%);
+  font-size: 30px;
+
+}
 
 main .parent .websites img {
   width: 50vw;
+  padding: 15px;
+  transition: all 350ms ease-out;
 }
 
 .contact {
